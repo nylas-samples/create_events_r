@@ -12,12 +12,12 @@ load_dot_env(file = ".env")
 body = paste('{"title": "Learn R with Nylas",
          "when": {"start_time": 1675864800,
                   "end_time": 1675866600},
-         "location": "Blag\'s Den",
+         "location": "YOUR LOCATION",
          "calendar_id":"', Sys.getenv("CALENDAR_ID"),
          '", "participants": [
             {
-              "email": "atejada@gmail.com",
-              "name": "Blag"
+              "email": "YOUR EMAIL",
+              "name": "YOUR NAME"
             }
           ]
         }');
