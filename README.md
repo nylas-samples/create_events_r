@@ -1,45 +1,42 @@
-# code-sample-description
-This sample repo will show you how to easily do X with Nylas.
+# create_events_r
+
+This sample will show you to easily create events using the Events Endpoint API.
 
 ## Setup
 
-### System dependencies
+Install the following packages into RStudio
 
-- Add System dependencies
+- httr
+- dotenv
 
 ### Gather environment variables
 
-You'll need the following values from the Nylas Dashboard:
+You'll need the following values:
 
 ```text
-ACCESS_TOKEN = ""
-CLIENT_ID = ""
-CLIENT_SECRET = ""
+API_KEY="<ACCESS_TOKEN>"
+CALENDAR_ID="<CALENDAR_ID>"
 ```
 
-Add the above values to a `.env` file.
+Add the above values to a new `.env` file:
 
-The `.env` file is added to `.gitignore`. Ensure to store these values securely.
-
-### Install dependencies
-
-[replace with install steps]
 ```bash
-$ npm i
+$ touch .env # Then add your env variables
 ```
 
 ## Usage
 
-The recommended way to use this sample is ...
+Run the app:
 
-You can also clone the repository ...
+```bash
+$ source("~/YOUR_FOLDER/CreateEvent.R", echo=TRUE)
+```
 
-You'll find more detailed instructions ...
+When you run it, it will display the newly created event
 
-## Get support
-
-If you found a bug or want to suggest a new [feature/use case/sample], please file an issue.
 
 ## Learn more
 
-Visit our [Nylas documentation](https://developer.nylas.com/) to learn more.
+Read the blog post [How to Schedule Events with Any Calendar API](https://www.nylas.com/blog/how-to-schedule-events-with-any-calendar-api/)
+
+Visit our [Nylas Calendar API documentation](https://developer.nylas.com/docs/connectivity/calendar/) to learn more.
