@@ -14,8 +14,10 @@ Install the following packages into RStudio
 You'll need the following values:
 
 ```text
-API_KEY="<ACCESS_TOKEN>"
+API_KEY_V3="<ACCESS_TOKEN>"
 CALENDAR_ID="<CALENDAR_ID>"
+GUEST_EMAIL="<GUEST_EMAIL>"
+GUEST_NAME="<GUEST_NAME>"
 ```
 
 Add the above values to a new `.env` file:
@@ -29,7 +31,7 @@ $ touch .env # Then add your env variables
 Run the app:
 
 ```bash
-$ source("~/YOUR_FOLDER/CreateEvent.R", echo=TRUE)
+$ source("~/YOUR_FOLDER/CreateEvent_V3.R", echo=TRUE)
 ```
 
 When you run it, it will display the newly created event
